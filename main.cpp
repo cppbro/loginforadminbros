@@ -18,10 +18,11 @@ std::string getPassword()
 }
 std::string testLogin(std::string username, std::string password)
 {
-	if (username == "admin bro" && password == "admin bro")
+	if (username == "admin" && password == "cookies")
 		std::cout << "You have been logged in";
 	else
 		std::cout << "Error, incorrect username or password";
+
 	return 0;
 
 }
@@ -29,10 +30,13 @@ std::string testLogin(std::string username, std::string password)
 
 int main()
 {
-	std::string username { getUsername() };
-	std::string password { getPassword() };
+	std::string username{ getUsername() };
+	std::string password{ getPassword() };
 
-	testLogin(username,password);
+	testLogin(username, password);
 
 	return 0;
 }
+
+
+// edited cuz it cin broke it lol
